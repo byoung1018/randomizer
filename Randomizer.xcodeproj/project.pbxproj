@@ -14,6 +14,7 @@
 		DC4BC0D71B39310A00F2A4F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4BC0D51B39310A00F2A4F9 /* LaunchScreen.storyboard */; };
 		DC4BC0E21B39310A00F2A4F9 /* RandomizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4BC0E11B39310A00F2A4F9 /* RandomizerTests.swift */; };
 		DC4BC0ED1B39310A00F2A4F9 /* RandomizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4BC0EC1B39310A00F2A4F9 /* RandomizerUITests.swift */; };
+		DC4BC0FB1B39327B00F2A4F9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4BC0FA1B39327B00F2A4F9 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DC4BC0E81B39310A00F2A4F9 /* RandomizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4BC0EC1B39310A00F2A4F9 /* RandomizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerUITests.swift; sourceTree = "<group>"; };
 		DC4BC0EE1B39310A00F2A4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4BC0FA1B39327B00F2A4F9 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				DC4BC0D31B39310A00F2A4F9 /* Assets.xcassets */,
 				DC4BC0D51B39310A00F2A4F9 /* LaunchScreen.storyboard */,
 				DC4BC0D81B39310A00F2A4F9 /* Info.plist */,
+				DC4BC0FA1B39327B00F2A4F9 /* CustomCell.swift */,
 			);
 			path = Randomizer;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				TargetAttributes = {
 					DC4BC0C81B39310A00F2A4F9 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = QFKPCTVUCQ;
 					};
 					DC4BC0DC1B39310A00F2A4F9 = {
 						CreatedOnToolsVersion = 7.0;
@@ -256,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC4BC0CF1B39310A00F2A4F9 /* ViewController.swift in Sources */,
+				DC4BC0FB1B39327B00F2A4F9 /* CustomCell.swift in Sources */,
 				DC4BC0CD1B39310A00F2A4F9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,10 +403,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Randomizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bryce.Randomizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -409,10 +419,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Randomizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bryce.Randomizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -483,6 +498,7 @@
 				DC4BC0F31B39310A00F2A4F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC4BC0F41B39310A00F2A4F9 /* Build configuration list for PBXNativeTarget "RandomizerTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +507,7 @@
 				DC4BC0F61B39310A00F2A4F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC4BC0F71B39310A00F2A4F9 /* Build configuration list for PBXNativeTarget "RandomizerUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +516,7 @@
 				DC4BC0F91B39310A00F2A4F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

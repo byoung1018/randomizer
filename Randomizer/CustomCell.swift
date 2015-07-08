@@ -1,0 +1,27 @@
+//
+//  CustomCell.swift
+//  Randomizer
+//
+//  Created by Bryce Young on 6/22/15.
+//  Copyright © 2015 Bryce Young. All rights reserved.
+//
+
+import UIKit
+
+class CustomCell: UITableViewCell {
+
+    
+    @IBOutlet weak var optionText: UITextField!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+   
+}
